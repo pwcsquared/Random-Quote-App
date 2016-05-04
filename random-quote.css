@@ -48,4 +48,54 @@ h1, h3 {
 .fa {
   font-size: 3em;
   margin-right: 10%;
+@import url(https://fonts.googleapis.com/css?family=Roboto+Slab);
+@import url(https://fonts.googleapis.com/css?family=Six+Caps);
+  
+
+body {
+  font-family: "Roboto Slab", serif;
+  background-color: #4099e4;
+}
+
+#bgText {
+  margin-top: -20%;
+  white-space: nowrap;
+  position: fixed;
+  color: #1d7bc9;
+  font-family: "Six Caps";
+  font-size: 30.2em;
+  z-index: -1;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.mainContainer {
+  background-color: rgba(255, 255, 255, 0.7);
+  width: 37%;
+  margin: 7% auto 0;
+  border-radius: 0.5em;
+  padding: 1em;
+  text-align: center;
+}
+
+h1, h3 {
+  font-weight: normal;
+}
+
+#author {
+  margin-left: 57%;
+  margin-top: 1em;
+  padding: 0.5em;
+}
+
+.btnContainer {
+  margin-top: -3.5em;
+  width: 27%;
+  }
+
+.fa {
+  font-size: 3em;
+  margin-right: 10%;
 }

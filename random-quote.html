@@ -1,11 +1,11 @@
 <h1 id="bgText">RANDOM QUOTE MACHINE<br>RANDOM QUOTE MACHINE<br>RANDOM QUOTE MACHINE</h1>
-<div class="mainContainer">
-  <h1 id="quote"></h1>
+<div ng-app="quoteApp" ng-controller="myCtrl" ng-init="newQuote()" class="mainContainer">
+  <h1 id="quote">{{quote}}</h1>
   <div>
-    <h3 id="author"></h3>
+    <h3 id="author">{{author}}</h3>
     <div class="btnContainer">
-      <a class="button getQuote" title="Get a new quote!"><i class="fa fa-refresh"></i></a>
-      <a class="button tweetQuote" href="https://twitter.com/intent/tweet" title="Tweet this quote!" target="_blank"><i class="fa fa-twitter"></i></a>
+      <a class="button getQuote" title="Get a new quote!" ng-click="newQuote()"><i class="fa fa-refresh"></i></a>
+      <a class="button tweetQuote" ng-href='https://twitter.com/intent/tweet?text={{quote + " -" + author}}' title="Tweet this quote!" target="_blank"><i class="fa fa-twitter"></i></a>
     </div>
   </div>
 </div>
